@@ -1,251 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio do Lalá</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <!-- SB Admin 2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/4.1.4/css/sb-admin-2.min.css" rel="stylesheet">
-    <style>
-        /* Adicionado estilo para esconder as seções */
-        .section {
-            display: none;
-        }
-        .section.active {
-            display: block;
-        }
-        /* Centralizar todo o texto */
-        body, h1, p {
-            text-align: center;
-        }
-        /* Centralizar o footer */
-        footer {
-            text-align: center;
-        }
-        /* Estilo moderno para o card */
-        .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s;
-        }
-        .card:hover {
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-        /* Slide estilo moderno */
-        .carousel-item {
-            text-align: center;
-        }
-    </style>
-</head>
-<body id="page-top">
-
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Portfólio do Lalá</div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Sobre -->
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="showSection('sobre')">
-                    <i class="fas fa-user"></i>
-                    <span>Sobre</span>
-                </a>
-            </li>
-
-            <!-- Nav Item - Projetos -->
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="showSection('projetos')">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Projetos</span>
-                </a>
-            </li>
-
-            <!-- Nav Item - Contato -->
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="showSection('contato')">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contato</span>
-                </a>
-            </li>
-
-        </ul>
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
-                    </ul>
-
-                </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Sobre -->
-                    <section id="sobre" class="section active">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h1 class="h3 mb-4 text-gray-800">Sobre Mim</h1>
-                                            <p>Aqui você pode escrever um pouco sobre você, suas habilidades, experiências e interesses.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <hr class="my-4">
-
-                    <!-- Projetos -->
-                    <section id="projetos" class="section">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h1 class="h3 mb-4 text-gray-800">Projetos</h1>
-                                            <!-- Aqui você pode adicionar os seus projetos -->
-                                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <a href="https://seu-projeto-1.com" target="_blank">
-                                                            <img src="projeto1.jpg" class="d-block w-100" alt="Projeto 1">
-                                                        </a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a href="https://seu-projeto-2.com" target="_blank">
-                                                            <img src="projeto2.jpg" class="d-block w-100" alt="Projeto 2">
-                                                        </a>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <a href="https://seu-projeto-3.com" target="_blank">
-                                                            <img src="projeto3.jpg" class="d-block w-100" alt="Projeto 3">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Anterior</span>
-                                                </a>
-                                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Próximo</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <hr class="my-4">
-
-                    <!-- Contato -->
-                    <section id="contato" class="section">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h1 class="h3 mb-4 text-gray-800">Contato</h1>
-                                            <form>
-                                                <div class="form-group">
-                                                    <label for="nome">Nome</label>
-                                                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email">Email</label>
-                                                    <input type="email" class="form-control" id="email" placeholder="Seu email">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="mensagem">Mensagem</label>
-                                                    <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Enviar</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <span>&copy; 2024 Portfólio do Lalá. Todos os direitos reservados.</span>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
+    <title>:: Laércio Ricardo ::</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<body>
+    <!--Menu do topo-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
         </div>
-        <!-- End of Content Wrapper -->
+    </nav>
+    
+    <!-- Header -->
+    <header class="jumbotron">
+        <video autoplay loop muted style="max-width: 100%;">
+            <source src="portfolio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </header>
 
-    </div>
-    <!-- End of Page Wrapper -->
+    <!-- Sobre -->
+    <section id="about" class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p>Sou um desenvolvedor web apaixonado por criar experiências incríveis na web. Tenho experiência em diversas tecnologias e estou sempre em busca de aprender mais e melhorar minhas habilidades.</p>
+    </section>
 
-    <!-- Bootstrap core JavaScript-->
+    <!-- Projetos -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="banner.png" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Descrição breve do projeto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="banner.png" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição breve do projeto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="banner.png" class="card-img-top" alt="Projeto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 3</h5>
+                        <p class="card-text">Descrição breve do projeto.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <img src="banner.png" class="card-img-top" alt="Projeto 1">
+            <div class="card-body">
+                <h5 class="card-title">Projeto 5</h5>
+                <p class="card-text">Descrição breve do projeto.</p>
+            </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="container mt-5">
+        <h2 class="section-title text-center mb-4">Contato</h2>
+        <div class="card mx-auto" style="width: 18rem;">
+            <div class="card-body">
+                <div class="social-links text-center">
+                    <a href="mailto:laercioricardolima@gmail.com" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/email.png" alt="Email"></a>
+                    <a href="https://wa.me/5586994998988" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/phone.png" alt="Phone"></a>
+                    <a href="https://github.com/Laercio-Ricardo" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/laercioricardolima" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+                </div>
+                <form action="mailto:laercioricardolima@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- SB Admin 2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/4.1.4/js/sb-admin-2.min.js"></script>
-
-    <script>
-        function showSection(sectionId) {
-            // Esconder todas as seções
-            document.querySelectorAll('.section').forEach(function(section) {
-                section.classList.remove('active');
-            });
-            // Mostrar apenas a seção desejada
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
 </body>
 </html>

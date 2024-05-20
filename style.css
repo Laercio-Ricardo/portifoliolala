@@ -1,0 +1,182 @@
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #000;
+    color: #fff;
+}
+.navbar {
+    background-color:red; /* Fundo preto */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s;
+    
+}
+
+.navbar-nav .nav-link:hover {
+    color: orangered !important; /* Cor dos links ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de levitar ao passar o mouse */
+}
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #000;
+}
+.section-title {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+
+}
+#about, #projects, #contact {
+    background-color: #222;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.card {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    background-color: #444; /* Nova cor para os cards */
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.form-group label {
+    font-weight: bold;
+    color: #fff;
+}
+.form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border-color: #444;
+    color: #fff;
+    background-color: #333;
+}
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+    .list-unstyled a {
+        color: white;
+    }
+
+    .list-unstyled a:hover {
+        text-decoration: none;
+    }
+
+    .list-unstyled a:hover i {
+        color: green; /* ou a cor desejada */
+    }
+    .social-links img {
+        width: 30px;
+        margin: 0 10px;
+        transition: transform 0.3s, filter 0.3s;
+    }
+    .social-links img:hover {
+        transform: scale(1.2);
+        filter: brightness(1.5);
+    }
+    .social-links {
+        margin-bottom: 1rem;
+    }
+    /* Estilos para a seção de contato */
+    #contact {
+        background-color: #222;
+        padding: 50px 20px;
+        border-radius: 15px;
+        margin-top: 50px;
+    }
+    #contact h2 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .phone-screen {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .phone-screen:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: calc(50% - 20px);
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #333;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        color: #fff;
+    }
+    .form-control {
+        background-color: #444;
+        color: #fff;
+        border-color: #555;
+    }
+    .form-control:focus {
+        background-color: #555;
+        border-color: #666;
+        color: #fff;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
